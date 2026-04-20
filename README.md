@@ -1,73 +1,43 @@
-# React + TypeScript + Vite
+# Flappy Unicorn 🦄
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A beautifully crafted, modern SVG-based Flappy Bird clone. Take flight as a unicorn leaving a vibrant rainbow trail and glittering sparkles across the sky! Built with modular components, pure hand-drawn SVGs, and responsive React state physics.
 
-Currently, two official plugins are available:
+![Flappy Unicorn Game Banner](https://github.com/CameronWDavis/Flappy-Unicorn/assets/Flappy-Unicorn)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- 🌈 **Responsive Physics:** Custom-built React `requestAnimationFrame` hooks keeping the physics light, stable, and highly responsive.
+- 🦄 **Hand-Drawn SVGs:** The unicorn, dynamic rainbow trail, parallax clouds, and pipes are designed entirely in modular SVG elements for crisp graphics on any device.
+- 💨 **Particle Engine:** A dynamic sparkle emitter mapped directly to the unicorn's jump velocity to give a "whoosh" momentum effect.
+- Modular Design: Structured and scalable architecture breaking components out into atomic elements (`Unicorn`, `Obstacle`, `RainbowTrail`, `Cloud`, and UI Overlays).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Play it locally!
 
-## Expanding the ESLint configuration
+### Prerequisites
+Make sure you have Node.js and npm installed on your machine.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Installation
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+1. Clone this repository to your local machine:
+   ```bash
+   git clone https://github.com/CameronWDavis/Flappy-Unicorn.git
+   cd Flappy-Unicorn
+   ```
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+3. Spin up the Vite development server:
+   ```bash
+   npm run dev
+   ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+4. Press the `Spacebar`, `ArrowUp` or click on the screen to take flight and see how far you can make it!
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Author & Contact
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Authored by **[CameronWDavis](https://github.com/CameronWDavis)**. 
+
+If you stumble upon any bugs or have feature requests, please feel free to open an issue or PR on [GitHub](https://github.com/CameronWDavis/Flappy-Unicorn)!
