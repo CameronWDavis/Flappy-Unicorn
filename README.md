@@ -40,4 +40,3 @@ Make sure you have Node.js and npm installed on your machine.
 
 Authored by **[CameronWDavis](https://github.com/CameronWDavis)**. 
 
-If you stumble upon any bugs or have feature requests, please feel free to open an issue or PR on [GitHub](https://github.com/CameronWDavis/Flappy-Unicorn)!
