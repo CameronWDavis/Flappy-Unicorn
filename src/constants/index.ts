@@ -1,0 +1,13 @@
+export const GAME_WIDTH = 400;
+export const GAME_HEIGHT = 600;
+export const UNICORN_X = 90;
+export const UNICORN_SIZE = 60;
+export const GRAVITY = 0.45;
+export const JUMP_VELOCITY = -7.8;
+export const MAX_FALL = 10;
+export const OBSTACLE_W = 72;
+export const OBSTACLE_GAP = 195;
+export const OBSTACLE_SPEED = 2.4;
+export const OBSTACLE_SPACING = 270;
+export const TRAIL_LEN = 80;
+export const TRAIL_SPAWN_X = UNICORN_X - 2; // near the tail tip
